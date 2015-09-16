@@ -1,5 +1,7 @@
-# default is World
-#Author: sabrina (sabrinainfo3am@gmail.com)
-name = ARGV.first || "world"
+require 'greeter'
 
-puts "Hello, #{sabrina}!"
+# Default is World
+name = ARGV.first || "World"
+
+greeter = Greeter.new(name)
+puts greeter.greet
