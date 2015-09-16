@@ -1,0 +1,5 @@
+#!/usr/bin/ruby -wkU
+task :default => :run
+task :run do
+crequire  './lib/hello'
+end
